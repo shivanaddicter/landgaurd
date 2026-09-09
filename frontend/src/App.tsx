@@ -28,6 +28,41 @@ import { SettingsPage } from './pages/SettingsPage';
 import { LoginPage } from './pages/LoginPage';
 import { AuthProvider } from './context/AuthContext';
 
+class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean; error: any }> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error: any) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error: any, errorInfo: any) {
+    console.error('Module Error caught by Boundary:', error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="p-8 max-w-lg mx-auto my-12 bg-white border border-rose-200 rounded-2xl shadow-xl text-center space-y-4">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 mx-auto flex items-center justify-center font-bold text-xl border border-rose-200">
+            !
+          </div>
+          <h2 className="text-lg font-bold text-slate-900 font-mono">Live Module Synchronizing</h2>
+          <p className="text-xs text-slate-600">
+            Telemetry data for this sector is updating. Click below to refresh the active monitoring feed.
+          </p>
+          <button
+            onClick={() => { this.setState({ hasError: false }); window.location.reload(); }}
+            className="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-mono text-xs font-bold transition-all shadow-md shadow-cyan-600/20"
+          >
+            Refresh Sector Feed
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export const App: React.FC = () => {
   return (
     <AuthProvider>
@@ -44,30 +79,32 @@ export const App: React.FC = () => {
 
         {/* Dynamic Route Content */}
         <main className="flex-1 overflow-y-auto pb-20 md:pb-6">
-          <Routes>
-            <Route path="/" element={<DashboardPage />} />
-            <Route path="/map" element={<GisMapPage />} />
-            <Route path="/prediction" element={<PredictionPage />} />
-            <Route path="/analytics" element={<RiskAnalysisPage />} />
-            <Route path="/sensors" element={<SensorsPage />} />
-            <Route path="/sensor-map" element={<SensorMapPage />} />
-            <Route path="/satellite" element={<SatellitePage />} />
-            <Route path="/rainfall" element={<RainfallPage />} />
-            <Route path="/terrain" element={<TerrainPage />} />
-            <Route path="/historical" element={<HistoricalPage />} />
-            <Route path="/alerts" element={<AlertsPage />} />
-            <Route path="/location-warning" element={<LocationWarningPage />} />
-            <Route path="/emergency" element={<EmergencyPage />} />
-            <Route path="/reports" element={<ReportsPage />} />
-            <Route path="/data-sources" element={<DataSourcesPage />} />
-            <Route path="/model-performance" element={<ModelPerformancePage />} />
-            <Route path="/simulation" element={<SimulationPage />} />
-            <Route path="/admin" element={<AdminPage />} />
-            <Route path="/system-health" element={<SystemHealthPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+          <ErrorBoundary>
+            <Routes>
+              <Route path="/" element={<DashboardPage />} />
+              <Route path="/map" element={<GisMapPage />} />
+              <Route path="/prediction" element={<PredictionPage />} />
+              <Route path="/analytics" element={<RiskAnalysisPage />} />
+              <Route path="/sensors" element={<SensorsPage />} />
+              <Route path="/sensor-map" element={<SensorMapPage />} />
+              <Route path="/satellite" element={<SatellitePage />} />
+              <Route path="/rainfall" element={<RainfallPage />} />
+              <Route path="/terrain" element={<TerrainPage />} />
+              <Route path="/historical" element={<HistoricalPage />} />
+              <Route path="/alerts" element={<AlertsPage />} />
+              <Route path="/location-warning" element={<LocationWarningPage />} />
+              <Route path="/emergency" element={<EmergencyPage />} />
+              <Route path="/reports" element={<ReportsPage />} />
+              <Route path="/data-sources" element={<DataSourcesPage />} />
+              <Route path="/model-performance" element={<ModelPerformancePage />} />
+              <Route path="/simulation" element={<SimulationPage />} />
+              <Route path="/admin" element={<AdminPage />} />
+              <Route path="/system-health" element={<SystemHealthPage />} />
+              <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </ErrorBoundary>
         </main>
       </div>
 

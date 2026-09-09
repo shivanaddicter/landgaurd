@@ -313,17 +313,61 @@ export const api = {
     if (data) return data;
     return {
       success: true,
-      location_id: locationId,
-      recommended_route: 'NH-13 Southern Bypass -> Old Sub-divisional Helipad Ground',
-      distance_km: 8.4,
-      estimated_travel_time_mins: 18,
-      assembly_point: 'District Sports Complex, Tawang',
-      shelter_capacity: 1500,
-      active_hazards_en_route: ['Partial shoulder scouring at Ch. 44+200'],
-      safe_waypoints: [
-        { name: 'Start: Valley Ridge', lat: 27.5857, lng: 91.8676 },
-        { name: 'Safe Junction Checkpoint', lat: 27.5890, lng: 91.8740 },
-        { name: 'Primary Relief Camp', lat: 27.5925, lng: 91.8810 }
+      location: 'Tawang Valley Ridge & NH-13 Corridor',
+      evacuation_corridor: 'Corridor Green-Alfa (Clear of Active Debris)',
+      distance_km: 3.8,
+      estimated_travel_time_min: 14,
+      nearest_shelter: {
+        id: 'EM-SH-01',
+        name: 'Tawang Government Higher Secondary Relief Camp',
+        district: 'Tawang',
+        latitude: 27.5885,
+        longitude: 91.864,
+        capacity: 650,
+        current_occupancy: 124,
+        contact: '+91-3794-222340',
+        status: 'ready',
+        medical_team_on_site: true,
+        generator_power: true
+      },
+      nearest_hospital: {
+        id: 'EM-HP-01',
+        name: 'Khandro Drowa Tsangmu District Hospital Tawang',
+        district: 'Tawang',
+        latitude: 27.583,
+        longitude: 91.8625,
+        trauma_beds: 45,
+        available_ambulances: 6,
+        blood_bank: 'Available',
+        contact: '+91-3794-222216',
+        distance_km_from_high_risk: 2.1
+      },
+      recommended_transport: '4x4 Emergency Vehicles or On-Foot Guided Convoy',
+      waypoints: [
+        {
+          lat: 27.5857,
+          lng: 91.8676,
+          instruction: 'Vulnerable Sector Starting Point (Ridge Post)'
+        },
+        {
+          lat: 27.5877,
+          lng: 91.8646,
+          instruction: 'Turn North onto High-Ridge Bypass (Avoid NH-13 Slump Zone)'
+        },
+        {
+          lat: 27.5897,
+          lng: 91.8626,
+          instruction: 'Proceed past Military Cantonment Checkpost Alpha'
+        },
+        {
+          lat: 27.5885,
+          lng: 91.8640,
+          instruction: 'Arrive at Safe Haven: Tawang Relief Shelter Complex'
+        }
+      ],
+      cautionary_hazards: [
+        'Do NOT use lower valley riverside footpath (high flash flood surge risk).',
+        'Stay clear of overhead 132kV transmission towers on eastern escarpment.'
       ]
     };
   },

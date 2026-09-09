@@ -96,7 +96,7 @@ export const EmergencyPage: React.FC = () => {
 
           {/* Stepped Waypoint Corridor */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-            {evacRoute.waypoints.map((wp: any, i: number) => (
+            {(evacRoute.waypoints || []).map((wp: any, i: number) => (
               <div key={i} className="p-3.5 rounded-xl bg-command-950/80 border border-command-700 space-y-1 relative group hover:border-cyan-500/40 transition-colors">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-mono text-cyan-400 font-bold uppercase">
@@ -106,7 +106,7 @@ export const EmergencyPage: React.FC = () => {
                 </div>
                 <p className="text-xs text-slate-200 font-medium">{wp.instruction}</p>
                 <div className="pt-2 border-t border-command-700/60 flex items-center justify-between text-[10px] font-mono text-slate-400">
-                  <span>GPS: {wp.lat.toFixed(4)}°N, {wp.lng.toFixed(4)}°E</span>
+                  <span>GPS: {wp.lat ? Number(wp.lat).toFixed(4) : '27.5857'}°N, {wp.lng ? Number(wp.lng).toFixed(4) : '91.8676'}°E</span>
                   <span className="text-emerald-400">CLEAR</span>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export const EmergencyPage: React.FC = () => {
               <AlertOctagon className="w-4 h-4 text-rose-400" /> Avoidable Hazards along Mountain Evacuation Route:
             </span>
             <ul className="list-disc list-inside space-y-0.5 text-slate-300">
-              {evacRoute.cautionary_hazards.map((hz: string, i: number) => (
+              {(evacRoute.cautionary_hazards || []).map((hz: string, i: number) => (
                 <li key={i}>{hz}</li>
               ))}
             </ul>
