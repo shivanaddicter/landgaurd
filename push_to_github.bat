@@ -1,14 +1,14 @@
 @echo off
 setlocal
 echo ========================================================
-echo   AI-SlopeGuard - Pushing to GitHub (shivanaddicter/SIH)
+echo   AI-SlopeGuard - Pushing to GitHub (shivanaddicter/landgaurd)
 echo ========================================================
 echo.
 
 set PATH=%PATH%;C:\Users\User\git\cmd
 cd /d "C:\Users\User\Desktop\p1"
 
-set REPO_URL=https://github.com/shivanaddicter/SIH.git
+set REPO_URL=https://github.com/shivanaddicter/landgaurd.git
 
 echo Remote: %REPO_URL%
 git remote remove origin 2>nul
@@ -26,11 +26,11 @@ if %ERRORLEVEL% EQU 0 (
     echo ========================================================
     echo   SUCCESS! PUSHED TO GITHUB!
     echo ========================================================
-    echo Repository: https://github.com/shivanaddicter/SIH
+    echo Repository: https://github.com/shivanaddicter/landgaurd
     echo.
     echo Next step to host on Vercel:
     echo  1. Go to https://vercel.com/new
-    echo  2. Click "Import" on "shivanaddicter/SIH"
+    echo  2. Click "Import" on "shivanaddicter/landgaurd"
     echo  3. Click "Deploy" (Vite settings auto-configured)
     echo ========================================================
 ) else (
