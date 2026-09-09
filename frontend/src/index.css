@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', 'Inter', sans-serif;
+    color: #0f172a;
+  }
+
+  /* Smooth light custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+@layer components {
+  /* Clean White Light Theme Container */
+  .glass-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  }
+
+  .glass-panel-elevated {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  }
+
+  .glass-input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+  .glass-input:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+    outline: none;
+  }
+
+  /* Soft glowing alert borders */
+  .glow-border-critical {
+    box-shadow: 0 0 12px rgba(225, 29, 72, 0.25);
+    border-color: rgba(225, 29, 72, 0.6);
+  }
+
+  .glow-border-high {
+    box-shadow: 0 0 12px rgba(234, 88, 12, 0.25);
+    border-color: rgba(234, 88, 12, 0.6);
+  }
+
+  .glow-border-cyan {
+    box-shadow: 0 0 12px rgba(2, 132, 199, 0.25);
+    border-color: rgba(2, 132, 199, 0.6);
+  }
+}
+
+/* Light Mode Global Text Harmonization */
+/* Turn white text into crisp dark charcoal on light panels */
+.text-white:not([class*="bg-rose-500"]):not([class*="bg-blue-600"]):not([class*="bg-indigo-600"]):not([class*="bg-emerald-500"]):not([class*="bg-cyan-600"]):not([class*="bg-red-500"]):not(.keep-white) {
+  color: #0f172a;
+}
+
+.text-slate-100 {
+  color: #0f172a;
+}
+
+.text-slate-200 {
+  color: #1e293b;
+}
+
+.text-slate-300 {
+  color: #334155;
+}
+
+.text-slate-400 {
+  color: #64748b;
+}
+
+.text-slate-500 {
+  color: #64748b;
+}
+
+/* High-contrast metrics on light mode */
+.text-cyan-400, .text-cyan-300 {
+  color: #0284c7;
+}
+
+.text-emerald-400, .text-emerald-300 {
+  color: #059669;
+}
+
+.text-amber-400, .text-amber-300 {
+  color: #d97706;
+}
+
+.text-rose-400, .text-rose-300 {
+  color: #e11d48;
+}
+
+/* Fix Leaflet map light mode styling */
+.leaflet-container {
+  background: #f8fafc !important;
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #ffffff !important;
+  color: #0284c7 !important;
+  border-color: #e2e8f0 !important;
+}
+.leaflet-control-zoom a:hover {
+  background-color: #f1f5f9 !important;
+  color: #0369a1 !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.88) !important;
+  color: #64748b !important;
+}
+.leaflet-control-attribution a {
+  color: #0284c7 !important;
+}

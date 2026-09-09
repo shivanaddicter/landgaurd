@@ -1,0 +1,1818 @@
+{
+  "/api/dashboard": {
+    "success": true,
+    "timestamp": "2026-09-09T19:30:00Z",
+    "command_status": "HIGH ALERT LEVEL 2 (ORANGE/RED)",
+    "kpis": [
+      {
+        "id": "kpi-rainfall",
+        "title": "Rainfall (Last 24h)",
+        "value": "138.4 mm",
+        "numeric_value": 138.4,
+        "unit": "mm",
+        "change_pct": "+14.2%",
+        "trend": "up",
+        "status": "CRITICAL",
+        "status_color": "rose",
+        "sparkline": [
+          45,
+          62,
+          78,
+          92,
+          110,
+          128,
+          138.4
+        ],
+        "description": "Threshold: >100mm (High Risk)"
+      },
+      {
+        "id": "kpi-moisture",
+        "title": "Avg Soil Moisture",
+        "value": "74.2%",
+        "numeric_value": 74.2,
+        "unit": "%",
+        "change_pct": "+8.6%",
+        "trend": "up",
+        "status": "ELEVATED",
+        "status_color": "amber",
+        "sparkline": [
+          52,
+          55,
+          60,
+          64,
+          68,
+          71,
+          74.2
+        ],
+        "description": "Near Field Saturation Capacity"
+      },
+      {
+        "id": "kpi-high-risk-zones",
+        "title": "Active High-Risk Zones",
+        "value": "3 Sectors",
+        "numeric_value": 3,
+        "unit": "Zones",
+        "change_pct": "+1 Zone",
+        "trend": "up",
+        "status": "HIGH",
+        "status_color": "rose",
+        "sparkline": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        "description": "Tawang & Gangtok Sectors"
+      },
+      {
+        "id": "kpi-active-alerts",
+        "title": "Active Warning Alerts",
+        "value": "4 Active",
+        "numeric_value": 4,
+        "unit": "Alerts",
+        "change_pct": "2 Critical",
+        "trend": "up",
+        "status": "CRITICAL",
+        "status_color": "rose",
+        "sparkline": [
+          1,
+          2,
+          3,
+          2,
+          4,
+          3,
+          4
+        ],
+        "description": "NH-13 & NH-10 Lifelines Impacted"
+      },
+      {
+        "id": "kpi-probability",
+        "title": "Peak Landslide Probability",
+        "value": "89.5%",
+        "numeric_value": 89.5,
+        "unit": "%",
+        "change_pct": "+18.3%",
+        "trend": "up",
+        "status": "CRITICAL",
+        "status_color": "rose",
+        "sparkline": [
+          32,
+          45,
+          54,
+          68,
+          79,
+          84,
+          89.5
+        ],
+        "description": "Gangtok-Singtam NH-10 Corridor"
+      },
+      {
+        "id": "kpi-sensor-health",
+        "title": "IoT Sensor Health",
+        "value": "80.0%",
+        "numeric_value": 80.0,
+        "unit": "%",
+        "change_pct": "9/10 Active",
+        "trend": "neutral",
+        "status": "STABLE",
+        "status_color": "emerald",
+        "sparkline": [
+          100,
+          100,
+          95,
+          95,
+          90,
+          90,
+          80.0
+        ],
+        "description": "1 Node Reporting Creep Anomaly"
+      },
+      {
+        "id": "kpi-population",
+        "title": "Affected Population",
+        "value": "352,900",
+        "numeric_value": 352900,
+        "unit": "People",
+        "change_pct": "+12,400",
+        "trend": "up",
+        "status": "ELEVATED",
+        "status_color": "amber",
+        "sparkline": [
+          210000,
+          220000,
+          235000,
+          242000,
+          245000,
+          248000,
+          352900
+        ],
+        "description": "Across 7 NER Mountain Districts"
+      },
+      {
+        "id": "kpi-infra",
+        "title": "Critical Infrastructure",
+        "value": "3 Highways / 1 Grid",
+        "numeric_value": 4,
+        "unit": "Assets",
+        "change_pct": "1 Corridor Blocked",
+        "trend": "down",
+        "status": "HIGH RISK",
+        "status_color": "rose",
+        "sparkline": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          4
+        ],
+        "description": "NH-13, NH-10, BCT Highway, 132kV"
+      }
+    ],
+    "risk_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 1,
+      "LOW": 1
+    },
+    "recent_alerts": [
+      {
+        "id": "ALT-2026-0041",
+        "location_id": "LOC-TWG-01",
+        "location_name": "Tawang Valley Ridge & NH-13",
+        "district": "Tawang",
+        "state": "Arunachal Pradesh",
+        "severity": "critical",
+        "title": "URGENT: Imminent Slope Failure Threat along NH-13",
+        "description": "24h rainfall exceeded 138mm. Subsurface soil saturation reached 74.2% with active shear displacement of 4.8mm detected by sensor SNS-TWG-GM-01.",
+        "risk_score": 82.5,
+        "affected_population": 28400,
+        "recommended_actions": "1. Restrict all civilian transit along NH-13 Km 42-49.\n2. Evacuate 45 hillside homesteads to Tawang Higher Secondary Shelter.\n3. Position NDRF 12th Bn clearance bulldozer at Tawang bypass junction.",
+        "nearest_center": "Tawang Community Shelter & STNM Emergency Cell",
+        "status": "active",
+        "triggered_at": "2026-09-09T18:30:00Z"
+      },
+      {
+        "id": "ALT-2026-0042",
+        "location_id": "LOC-GTK-06",
+        "location_name": "Gangtok-Singtam NH-10 Corridor",
+        "district": "East Sikkim",
+        "state": "Sikkim",
+        "severity": "critical",
+        "title": "CRITICAL: Debris Flow Warning on NH-10 Lifeline",
+        "description": "Continuous cloudburst event (184mm in 24h). GNSS displacement accelerating at 8.6mm/day. Extreme probability of mudslide blocking Teesta corridor.",
+        "risk_score": 89.5,
+        "affected_population": 42000,
+        "recommended_actions": "Activate Siren Alert 3. Halt vehicular movement at Rangpo check-post. Divert freight via Lava-Kalimpong alternate route.",
+        "nearest_center": "STNM Multispeciality Disaster Ward",
+        "status": "active",
+        "triggered_at": "2026-09-09T19:05:00Z"
+      },
+      {
+        "id": "ALT-2026-0039",
+        "location_id": "LOC-CHR-07",
+        "location_name": "Cherrapunji Rim Escarpment",
+        "district": "East Khasi Hills",
+        "state": "Meghalaya",
+        "severity": "high",
+        "title": "HIGH ALERT: Torrential Precipitation & Karst Slump",
+        "description": "Precipitation crossed 240mm threshold. Soil moisture at 88%. Waterfall cascade scouring base of Sohra escarpment.",
+        "risk_score": 76.4,
+        "affected_population": 18500,
+        "recommended_actions": "Issue yellow alert to all downstream village councils (Dorbar Shnong). Avoid canyon trek routes.",
+        "nearest_center": "Cherrapunji Community Health Centre",
+        "status": "acknowledged",
+        "triggered_at": "2026-09-09T17:15:00Z"
+      },
+      {
+        "id": "ALT-2026-0038",
+        "location_id": "LOC-BMD-02",
+        "location_name": "Bomdila Pass BCT Highway",
+        "district": "West Kameng",
+        "state": "Arunachal Pradesh",
+        "severity": "medium",
+        "title": "ELEVATED RISK: Minor Toe Sloughing near BCT Km 68",
+        "description": "Pore pressure rising in schistose formation. Minor rockfall debris observed on shoulder.",
+        "risk_score": 48.0,
+        "affected_population": 14200,
+        "recommended_actions": "BRO (Border Roads Organisation) Project Vartak patrol dispatched. Single-lane movement advised.",
+        "nearest_center": "Bomdila Sub-Divisional Hospital",
+        "status": "acknowledged",
+        "triggered_at": "2026-09-09T16:00:00Z"
+      }
+    ],
+    "top_vulnerable_locations": [
+      {
+        "id": "LOC-TWG-01",
+        "name": "Tawang Valley Ridge & NH-13 Corridor",
+        "district": "Tawang",
+        "state": "Arunachal Pradesh",
+        "latitude": 27.5857,
+        "longitude": 91.8676,
+        "elevation_m": 3048,
+        "average_slope_deg": 38.4,
+        "population_affected": 28400,
+        "critical_infra": "NH-13 Trans-Arunachal Highway, 132kV Substation, Military Supply Corridor",
+        "risk_level": "HIGH",
+        "landslide_probability": 82.5,
+        "confidence_score": 91.0,
+        "dominant_cause": "Intense Monsoon Precipitation & Severe Slope Surcharge",
+        "soil_type": "Gneissic Colluvium & Weathered Phyllite",
+        "vegetation_ndvi": 0.54,
+        "drainage_condition": "Poor / Subsurface Pore Overpressure"
+      },
+      {
+        "id": "LOC-BMD-02",
+        "name": "Bomdila Pass Escarpment (BCT Road)",
+        "district": "West Kameng",
+        "state": "Arunachal Pradesh",
+        "latitude": 27.2645,
+        "longitude": 92.4162,
+        "elevation_m": 2415,
+        "average_slope_deg": 33.2,
+        "population_affected": 14200,
+        "critical_infra": "Balipara-Charduar-Tawang (BCT) Highway, District Civil Hospital",
+        "risk_level": "MEDIUM",
+        "landslide_probability": 48.0,
+        "confidence_score": 88.5,
+        "dominant_cause": "Toe-Erosion from Mountain Streams & Road Cutting",
+        "soil_type": "Schistose Regolith with Silt Pockets",
+        "vegetation_ndvi": 0.68,
+        "drainage_condition": "Moderate Natural Gullies"
+      },
+      {
+        "id": "LOC-ITA-03",
+        "name": "Itanagar Capital Complex Sector-4 Hills",
+        "district": "Papum Pare",
+        "state": "Arunachal Pradesh",
+        "latitude": 27.0844,
+        "longitude": 93.6053,
+        "elevation_m": 320,
+        "average_slope_deg": 26.5,
+        "population_affected": 59300,
+        "critical_infra": "Civil Secretariat, Banderdewa-Itanagar Four-Lane Highway",
+        "risk_level": "LOW",
+        "landslide_probability": 21.0,
+        "confidence_score": 93.2,
+        "dominant_cause": "Urban Hill Terracing & Deforestation",
+        "soil_type": "Tertiary Sandstone & Siltstone",
+        "vegetation_ndvi": 0.62,
+        "drainage_condition": "Adequate Storm Drains"
+      },
+      {
+        "id": "LOC-TEZ-04",
+        "name": "Tezpur Riverine Bluff & Foothills",
+        "district": "Sonitpur",
+        "state": "Assam",
+        "latitude": 26.6528,
+        "longitude": 92.7926,
+        "elevation_m": 48,
+        "average_slope_deg": 8.1,
+        "population_affected": 102500,
+        "critical_infra": "Kolia Bhomora Setu (Brahmaputra Bridge), Indian Air Force Base",
+        "risk_level": "LOW",
+        "landslide_probability": 11.5,
+        "confidence_score": 96.0,
+        "dominant_cause": "Riverbank Slumping during Brahmaputra Flood Crest",
+        "soil_type": "Alluvial Sand & Clayey Silt",
+        "vegetation_ndvi": 0.73,
+        "drainage_condition": "Flat River Basin"
+      }
+    ]
+  },
+  "/api/risk/zones": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "RZ-TWG-01",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                91.845,
+                27.575
+              ],
+              [
+                91.885,
+                27.575
+              ],
+              [
+                91.895,
+                27.598
+              ],
+              [
+                91.85,
+                27.602
+              ],
+              [
+                91.845,
+                27.575
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "RZ-TWG-01",
+          "location_id": "LOC-TWG-01",
+          "name": "Tawang Valley High-Ridge Sector",
+          "risk_level": "HIGH",
+          "probability": 82.5,
+          "confidence": 91.0,
+          "dominant_cause": "Heavy continuous precipitation & high soil saturation",
+          "rainfall_24h_mm": 138.4,
+          "soil_moisture_pct": 74.2,
+          "slope_deg": 38.4,
+          "elevation_m": 3048,
+          "ground_movement_mm": 4.8,
+          "temperature_c": 14.2,
+          "humidity_pct": 92.0,
+          "nearest_sensor": "SNS-TWG-RF-01",
+          "nearest_road": "NH-13 Trans-Arunachal Highway (0.4 km)",
+          "nearest_hospital": "District Hospital Tawang (2.1 km)",
+          "population_affected": 28400,
+          "color": "#f97316"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "RZ-BMD-02",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                92.395,
+                27.25
+              ],
+              [
+                92.435,
+                27.25
+              ],
+              [
+                92.44,
+                27.28
+              ],
+              [
+                92.4,
+                27.285
+              ],
+              [
+                92.395,
+                27.25
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "RZ-BMD-02",
+          "location_id": "LOC-BMD-02",
+          "name": "Bomdila Pass Highway Flank",
+          "risk_level": "MEDIUM",
+          "probability": 48.0,
+          "confidence": 88.5,
+          "dominant_cause": "Moderate rain & toe cutting along highway",
+          "rainfall_24h_mm": 72.5,
+          "soil_moisture_pct": 58.0,
+          "slope_deg": 33.2,
+          "elevation_m": 2415,
+          "ground_movement_mm": 1.9,
+          "temperature_c": 16.8,
+          "humidity_pct": 84.0,
+          "nearest_sensor": "SNS-BMD-SM-02",
+          "nearest_road": "BCT Highway km 68 (0.2 km)",
+          "nearest_hospital": "Bomdila Sub-Divisional Hospital (3.4 km)",
+          "population_affected": 14200,
+          "color": "#eab308"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "RZ-ITA-03",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                93.585,
+                27.07
+              ],
+              [
+                93.625,
+                27.07
+              ],
+              [
+                93.63,
+                27.1
+              ],
+              [
+                93.59,
+                27.105
+              ],
+              [
+                93.585,
+                27.07
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "RZ-ITA-03",
+          "location_id": "LOC-ITA-03",
+          "name": "Itanagar Ganga Lake Hill Slope",
+          "risk_level": "LOW",
+          "probability": 21.0,
+          "confidence": 93.2,
+          "dominant_cause": "Stable bedrock, moderate slope, engineered retaining wall",
+          "rainfall_24h_mm": 34.0,
+          "soil_moisture_pct": 41.5,
+          "slope_deg": 26.5,
+          "elevation_m": 320,
+          "ground_movement_mm": 0.4,
+          "temperature_c": 24.5,
+          "humidity_pct": 76.0,
+          "nearest_sensor": "SNS-ITA-TL-03",
+          "nearest_road": "NH-415 Four Lane (0.8 km)",
+          "nearest_hospital": "Tomo Riba Institute of Health (TRIHMS) (4.2 km)",
+          "population_affected": 59300,
+          "color": "#22c55e"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "RZ-GTK-04",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                98.585,
+                27.32
+              ],
+              [
+                98.625,
+                27.32
+              ],
+              [
+                98.63,
+                27.355
+              ],
+              [
+                98.59,
+                27.36
+              ],
+              [
+                98.585,
+                27.32
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "RZ-GTK-04",
+          "location_id": "LOC-GTK-06",
+          "name": "Gangtok-Singtam NH-10 Corridor",
+          "risk_level": "CRITICAL",
+          "probability": 89.5,
+          "confidence": 94.8,
+          "dominant_cause": "Severe pore pressure, 172mm rain in 18h, active shear plane",
+          "rainfall_24h_mm": 184.2,
+          "soil_moisture_pct": 86.4,
+          "slope_deg": 37.1,
+          "elevation_m": 1650,
+          "ground_movement_mm": 8.6,
+          "temperature_c": 15.1,
+          "humidity_pct": 98.0,
+          "nearest_sensor": "SNS-GTK-GM-06",
+          "nearest_road": "NH-10 Lifeline Corridor (0.1 km)",
+          "nearest_hospital": "STNM Multispeciality Hospital (1.5 km)",
+          "population_affected": 42000,
+          "color": "#ef4444"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "RZ-CHR-05",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                91.715,
+                25.255
+              ],
+              [
+                91.75,
+                25.255
+              ],
+              [
+                91.755,
+                25.285
+              ],
+              [
+                91.72,
+                25.29
+              ],
+              [
+                91.715,
+                25.255
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "RZ-CHR-05",
+          "location_id": "LOC-CHR-07",
+          "name": "Nohkalikai Escarpment Edge",
+          "risk_level": "HIGH",
+          "probability": 76.4,
+          "confidence": 92.1,
+          "dominant_cause": "Extreme torrential monsoon downpour & limestone dissolution",
+          "rainfall_24h_mm": 242.0,
+          "soil_moisture_pct": 88.0,
+          "slope_deg": 41.5,
+          "elevation_m": 1430,
+          "ground_movement_mm": 5.2,
+          "temperature_c": 19.2,
+          "humidity_pct": 99.0,
+          "nearest_sensor": "SNS-CHR-RF-07",
+          "nearest_road": "Sohra-Shella Road (0.6 km)",
+          "nearest_hospital": "Cherrapunji Community Health Centre (2.8 km)",
+          "population_affected": 18500,
+          "color": "#f97316"
+        }
+      }
+    ]
+  },
+  "/api/sensors": {
+    "success": true,
+    "count": 10,
+    "total_active": 8,
+    "sensors": [
+      {
+        "id": "SNS-TWG-RF-01",
+        "location_id": "LOC-TWG-01",
+        "location_name": "Tawang High Ridge",
+        "type": "rainfall",
+        "name": "Tipping-Bucket Pluviometer Station Alpha",
+        "latitude": 27.5872,
+        "longitude": 91.869,
+        "battery_pct": 94.5,
+        "signal_rssi": -68,
+        "status": "online",
+        "current_value": 42.4,
+        "unit": "mm/hr",
+        "last_update": "2 mins ago",
+        "hardware_uid": "LORA-TWG-RF-868-01",
+        "sampling_rate": "1 min"
+      },
+      {
+        "id": "SNS-TWG-SM-01",
+        "location_id": "LOC-TWG-01",
+        "location_name": "Tawang Slope Mid-Face",
+        "type": "soil_moisture",
+        "name": "Multi-Depth TDR Soil Saturation Probe",
+        "latitude": 27.5861,
+        "longitude": 91.8682,
+        "battery_pct": 89.0,
+        "signal_rssi": -72,
+        "status": "warning",
+        "current_value": 74.2,
+        "unit": "%",
+        "last_update": "1 min ago",
+        "hardware_uid": "LORA-TWG-SM-868-02",
+        "sampling_rate": "5 min"
+      },
+      {
+        "id": "SNS-TWG-GM-01",
+        "location_id": "LOC-TWG-01",
+        "location_name": "Tawang Toe Bench",
+        "type": "ground_movement",
+        "name": "Sub-Millimeter Wire Extensometer & Inclinometer",
+        "latitude": 27.5849,
+        "longitude": 91.8665,
+        "battery_pct": 81.2,
+        "signal_rssi": -75,
+        "status": "critical",
+        "current_value": 4.8,
+        "unit": "mm",
+        "last_update": "30 secs ago",
+        "hardware_uid": "LORA-TWG-GM-868-03",
+        "sampling_rate": "30 sec"
+      },
+      {
+        "id": "SNS-TWG-TL-01",
+        "location_id": "LOC-TWG-01",
+        "location_name": "Tawang Upper Cliff",
+        "type": "tilt",
+        "name": "MEMS Biaxial Tiltmeter",
+        "latitude": 27.588,
+        "longitude": 91.8698,
+        "battery_pct": 92.0,
+        "signal_rssi": -65,
+        "status": "warning",
+        "current_value": 3.2,
+        "unit": "\u00b0",
+        "last_update": "1 min ago",
+        "hardware_uid": "LORA-TWG-TL-868-04",
+        "sampling_rate": "1 min"
+      },
+      {
+        "id": "SNS-BMD-SM-02",
+        "location_id": "LOC-BMD-02",
+        "location_name": "Bomdila Pass",
+        "type": "soil_moisture",
+        "name": "FDR Capacitive Moisture Node",
+        "latitude": 27.2652,
+        "longitude": 92.417,
+        "battery_pct": 96.0,
+        "signal_rssi": -62,
+        "status": "online",
+        "current_value": 58.0,
+        "unit": "%",
+        "last_update": "4 mins ago",
+        "hardware_uid": "LORA-BMD-SM-868-01",
+        "sampling_rate": "5 min"
+      },
+      {
+        "id": "SNS-BMD-RF-02",
+        "location_id": "LOC-BMD-02",
+        "location_name": "Bomdila Camp",
+        "type": "rainfall",
+        "name": "Optical Rain Gauge Station",
+        "latitude": 27.2638,
+        "longitude": 92.4151,
+        "battery_pct": 88.4,
+        "signal_rssi": -78,
+        "status": "online",
+        "current_value": 18.5,
+        "unit": "mm/hr",
+        "last_update": "3 mins ago",
+        "hardware_uid": "LORA-BMD-RF-868-02",
+        "sampling_rate": "1 min"
+      },
+      {
+        "id": "SNS-ITA-TL-03",
+        "location_id": "LOC-ITA-03",
+        "location_name": "Itanagar Secretariat Hill",
+        "type": "tilt",
+        "name": "Smart Geospatial Inclinometer Node",
+        "latitude": 27.085,
+        "longitude": 93.606,
+        "battery_pct": 98.2,
+        "signal_rssi": -55,
+        "status": "online",
+        "current_value": 0.8,
+        "unit": "\u00b0",
+        "last_update": "5 mins ago",
+        "hardware_uid": "LORA-ITA-TL-868-01",
+        "sampling_rate": "10 min"
+      },
+      {
+        "id": "SNS-GTK-GM-06",
+        "location_id": "LOC-GTK-06",
+        "location_name": "Gangtok NH-10 Slope",
+        "type": "ground_movement",
+        "name": "Differential GNSS Geodetic Monitoring Station",
+        "latitude": 27.34,
+        "longitude": 88.608,
+        "battery_pct": 74.0,
+        "signal_rssi": -81,
+        "status": "critical",
+        "current_value": 8.6,
+        "unit": "mm",
+        "last_update": "10 secs ago",
+        "hardware_uid": "GNSS-GTK-01-UBLOX",
+        "sampling_rate": "10 sec"
+      },
+      {
+        "id": "SNS-CHR-RF-07",
+        "location_id": "LOC-CHR-07",
+        "location_name": "Cherrapunji Observatory",
+        "type": "rainfall",
+        "name": "High-Capacity Siphon Rain Gauge",
+        "latitude": 25.2715,
+        "longitude": 91.7335,
+        "battery_pct": 91.0,
+        "signal_rssi": -69,
+        "status": "online",
+        "current_value": 68.0,
+        "unit": "mm/hr",
+        "last_update": "1 min ago",
+        "hardware_uid": "IMD-CHR-SYP-01",
+        "sampling_rate": "1 min"
+      },
+      {
+        "id": "SNS-GHY-TH-05",
+        "location_id": "LOC-GHY-05",
+        "location_name": "Kamakhya Foothill",
+        "type": "temperature",
+        "name": "Microclimate Ambient Temperature & Humidity",
+        "latitude": 26.1865,
+        "longitude": 91.7088,
+        "battery_pct": 87.5,
+        "signal_rssi": -60,
+        "status": "online",
+        "current_value": 29.4,
+        "unit": "\u00b0C",
+        "last_update": "2 mins ago",
+        "hardware_uid": "SHT40-GHY-TH-01",
+        "sampling_rate": "5 min"
+      }
+    ]
+  },
+  "/api/rainfall": {
+    "success": true,
+    "current_thresholds": {
+      "normal_max": 50.0,
+      "elevated_max": 100.0,
+      "high_max": 150.0,
+      "critical_min": 150.0
+    },
+    "stations": [
+      {
+        "location": "Tawang Valley High Ridge",
+        "station_id": "IMD-TWG-01",
+        "hourly_mm": 42.4,
+        "rain_24h_mm": 138.4,
+        "rain_7d_mm": 412.0,
+        "rain_30d_mm": 890.5,
+        "anomaly_pct": "+34.5%",
+        "threshold_status": "HIGH",
+        "coordinates": [
+          27.5857,
+          91.8676
+        ]
+      },
+      {
+        "location": "Gangtok Ridge NH-10",
+        "station_id": "IMD-GTK-02",
+        "hourly_mm": 54.0,
+        "rain_24h_mm": 184.2,
+        "rain_7d_mm": 520.4,
+        "rain_30d_mm": 1120.0,
+        "anomaly_pct": "+48.2%",
+        "threshold_status": "CRITICAL",
+        "coordinates": [
+          27.3389,
+          88.6065
+        ]
+      },
+      {
+        "location": "Cherrapunji (Sohra) Escarpment",
+        "station_id": "IMD-CHR-03",
+        "hourly_mm": 68.0,
+        "rain_24h_mm": 242.0,
+        "rain_7d_mm": 860.0,
+        "rain_30d_mm": 2180.0,
+        "anomaly_pct": "+52.0%",
+        "threshold_status": "CRITICAL",
+        "coordinates": [
+          25.2702,
+          91.7323
+        ]
+      },
+      {
+        "location": "Bomdila Pass BCT Highway",
+        "station_id": "IMD-BMD-04",
+        "hourly_mm": 18.5,
+        "rain_24h_mm": 72.5,
+        "rain_7d_mm": 230.0,
+        "rain_30d_mm": 580.0,
+        "anomaly_pct": "+12.0%",
+        "threshold_status": "ELEVATED",
+        "coordinates": [
+          27.2645,
+          92.4162
+        ]
+      },
+      {
+        "location": "Itanagar Secretariat Complex",
+        "station_id": "IMD-ITA-05",
+        "hourly_mm": 6.2,
+        "rain_24h_mm": 34.0,
+        "rain_7d_mm": 120.0,
+        "rain_30d_mm": 340.0,
+        "anomaly_pct": "-8.5%",
+        "threshold_status": "NORMAL",
+        "coordinates": [
+          27.0844,
+          93.6053
+        ]
+      }
+    ],
+    "hourly_trend": [
+      {
+        "hour": "00:00",
+        "rainfall_mm": 12.0,
+        "intensity_class": "Moderate"
+      },
+      {
+        "hour": "03:00",
+        "rainfall_mm": 18.5,
+        "intensity_class": "Moderate"
+      },
+      {
+        "hour": "06:00",
+        "rainfall_mm": 26.0,
+        "intensity_class": "Heavy"
+      },
+      {
+        "hour": "09:00",
+        "rainfall_mm": 41.2,
+        "intensity_class": "Very Heavy"
+      },
+      {
+        "hour": "12:00",
+        "rainfall_mm": 58.0,
+        "intensity_class": "Downpour"
+      },
+      {
+        "hour": "15:00",
+        "rainfall_mm": 46.5,
+        "intensity_class": "Very Heavy"
+      },
+      {
+        "hour": "18:00",
+        "rainfall_mm": 38.0,
+        "intensity_class": "Heavy"
+      },
+      {
+        "hour": "21:00",
+        "rainfall_mm": 31.4,
+        "intensity_class": "Heavy"
+      }
+    ],
+    "cumulative_30d": [
+      {
+        "day": "Day 1",
+        "actual_mm": 44,
+        "normal_mm": 22
+      },
+      {
+        "day": "Day 4",
+        "actual_mm": 130,
+        "normal_mm": 88
+      },
+      {
+        "day": "Day 7",
+        "actual_mm": 264,
+        "normal_mm": 154
+      },
+      {
+        "day": "Day 10",
+        "actual_mm": 349,
+        "normal_mm": 220
+      },
+      {
+        "day": "Day 13",
+        "actual_mm": 434,
+        "normal_mm": 286
+      },
+      {
+        "day": "Day 16",
+        "actual_mm": 520,
+        "normal_mm": 352
+      },
+      {
+        "day": "Day 19",
+        "actual_mm": 654,
+        "normal_mm": 418
+      },
+      {
+        "day": "Day 22",
+        "actual_mm": 739,
+        "normal_mm": 484
+      },
+      {
+        "day": "Day 25",
+        "actual_mm": 824,
+        "normal_mm": 550
+      },
+      {
+        "day": "Day 28",
+        "actual_mm": 910,
+        "normal_mm": 616
+      }
+    ]
+  },
+  "/api/soil-moisture": {
+    "success": true,
+    "stations": [
+      {
+        "station_id": "SM-TWG-01",
+        "name": "Tawang Valley Ridge Soil Station",
+        "vwc_pct": 74.2,
+        "pore_pressure_kpa": 14.8,
+        "depth_profiles": [
+          {
+            "depth": "10 cm (Surface)",
+            "moisture_pct": 82.5,
+            "status": "Saturated"
+          },
+          {
+            "depth": "30 cm (Root Zone)",
+            "moisture_pct": 76.0,
+            "status": "Near Saturation"
+          },
+          {
+            "depth": "60 cm (Bedrock Interface)",
+            "moisture_pct": 71.4,
+            "status": "Elevated"
+          },
+          {
+            "depth": "100 cm (Slip Plane)",
+            "moisture_pct": 68.2,
+            "status": "Critical Pore Rise"
+          }
+        ],
+        "field_capacity_pct": 65.0,
+        "saturation_index": 0.88,
+        "risk_flag": "HIGH"
+      },
+      {
+        "station_id": "SM-GTK-02",
+        "name": "Gangtok NH-10 Colluvium Station",
+        "vwc_pct": 86.4,
+        "pore_pressure_kpa": 22.5,
+        "depth_profiles": [
+          {
+            "depth": "10 cm (Surface)",
+            "moisture_pct": 92.0,
+            "status": "Hyper-Saturated"
+          },
+          {
+            "depth": "30 cm (Root Zone)",
+            "moisture_pct": 88.5,
+            "status": "Hyper-Saturated"
+          },
+          {
+            "depth": "60 cm (Bedrock Interface)",
+            "moisture_pct": 85.0,
+            "status": "Liquefaction Hazard"
+          },
+          {
+            "depth": "100 cm (Slip Plane)",
+            "moisture_pct": 81.2,
+            "status": "Active Failure Zone"
+          }
+        ],
+        "field_capacity_pct": 68.0,
+        "saturation_index": 0.95,
+        "risk_flag": "CRITICAL"
+      },
+      {
+        "station_id": "SM-BMD-03",
+        "name": "Bomdila Pass Soil Station",
+        "vwc_pct": 58.0,
+        "pore_pressure_kpa": 6.2,
+        "depth_profiles": [
+          {
+            "depth": "10 cm (Surface)",
+            "moisture_pct": 62.0,
+            "status": "Normal"
+          },
+          {
+            "depth": "30 cm (Root Zone)",
+            "moisture_pct": 59.0,
+            "status": "Normal"
+          },
+          {
+            "depth": "60 cm (Bedrock Interface)",
+            "moisture_pct": 56.5,
+            "status": "Normal"
+          },
+          {
+            "depth": "100 cm (Slip Plane)",
+            "moisture_pct": 54.0,
+            "status": "Normal"
+          }
+        ],
+        "field_capacity_pct": 60.0,
+        "saturation_index": 0.62,
+        "risk_flag": "MEDIUM"
+      }
+    ],
+    "trend_7d": [
+      {
+        "date": "Sep 03",
+        "tawang": 52.0,
+        "gangtok": 61.5,
+        "bomdila": 44.0
+      },
+      {
+        "date": "Sep 04",
+        "tawang": 55.4,
+        "gangtok": 66.0,
+        "bomdila": 46.2
+      },
+      {
+        "date": "Sep 05",
+        "tawang": 61.0,
+        "gangtok": 72.8,
+        "bomdila": 49.0
+      },
+      {
+        "date": "Sep 06",
+        "tawang": 66.2,
+        "gangtok": 78.4,
+        "bomdila": 52.5
+      },
+      {
+        "date": "Sep 07",
+        "tawang": 70.5,
+        "gangtok": 82.0,
+        "bomdila": 55.0
+      },
+      {
+        "date": "Sep 08",
+        "tawang": 72.8,
+        "gangtok": 85.2,
+        "bomdila": 56.8
+      },
+      {
+        "date": "Sep 09",
+        "tawang": 74.2,
+        "gangtok": 86.4,
+        "bomdila": 58.0
+      }
+    ]
+  },
+  "/api/satellite": {
+    "success": true,
+    "data_classification": "DEMO / SYNTHETIC SATELLITE DERIVED INTELLIGENCE (ISRO/NRSC FORMAT)",
+    "mission": "Sentinel-1A C-Band SAR Interferometry & Sentinel-2B Multi-Spectral",
+    "last_pass_timestamp": "2026-09-08T04:22:18Z",
+    "coherence_quality": 0.88,
+    "sectors": [
+      {
+        "sector_name": "Tawang Valley Ridge Escarpment",
+        "coordinates": [
+          27.5857,
+          91.8676
+        ],
+        "insar_deformation_rate_mm_yr": -42.8,
+        "deformation_status": "ACCELERATED SUBSIDENCE",
+        "current_ndvi": 0.54,
+        "baseline_ndvi": 0.72,
+        "vegetation_loss_pct": -25.0,
+        "detected_scar_area_sq_m": 14500,
+        "soil_moisture_radar_proxy": "82% Saturation",
+        "risk_flag": "HIGH"
+      },
+      {
+        "sector_name": "Gangtok NH-10 Teesta Gorge",
+        "coordinates": [
+          27.3389,
+          88.6065
+        ],
+        "insar_deformation_rate_mm_yr": -68.4,
+        "deformation_status": "CRITICAL SLOPE SLIPPAGE",
+        "current_ndvi": 0.42,
+        "baseline_ndvi": 0.69,
+        "vegetation_loss_pct": -39.1,
+        "detected_scar_area_sq_m": 32000,
+        "soil_moisture_radar_proxy": "94% Saturation",
+        "risk_flag": "CRITICAL"
+      },
+      {
+        "sector_name": "Bomdila Pass Escarpment",
+        "coordinates": [
+          27.2645,
+          92.4162
+        ],
+        "insar_deformation_rate_mm_yr": -12.1,
+        "deformation_status": "MODERATE CREEP",
+        "current_ndvi": 0.68,
+        "baseline_ndvi": 0.74,
+        "vegetation_loss_pct": -8.1,
+        "detected_scar_area_sq_m": 4200,
+        "soil_moisture_radar_proxy": "61% Saturation",
+        "risk_flag": "MEDIUM"
+      }
+    ],
+    "comparison_slider": {
+      "before_date": "2026-08-01",
+      "after_date": "2026-09-01",
+      "target_location": "Tawang Valley Ridge Corridor",
+      "detected_changes": [
+        "14,500 m\u00b2 vegetation crown collapse detected on upper ridge",
+        "22 meters lateral scarp fracture identified along NH-13 shoulder",
+        "Debris cone deposition widening toward stream channel"
+      ],
+      "before_image_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+      "after_image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&auto=format&fit=crop&q=80"
+    }
+  },
+  "/api/terrain": {
+    "success": true,
+    "sectors": [
+      {
+        "id": "TER-TWG-01",
+        "name": "Tawang Valley Ridge Escarpment",
+        "elevation_m": 3048,
+        "slope_deg": 38.4,
+        "slope_classification": "Precipitous / Very Steep (>35\u00b0)",
+        "slope_color": "#ef4444",
+        "aspect": "South-West (Monsoon Windward Facing)",
+        "plan_curvature": -0.24,
+        "profile_curvature": 0.38,
+        "drainage_density": "High (3.8 km/km\u00b2)",
+        "geology": "Higher Himalayan Gneiss with Highly Weathered Muscovite-Biotite Schist",
+        "soil_type": "Colluvial Debris over Fractured Bedrock (Depth: 2.8m)",
+        "structural_features": "Tawang Thrust (Active Fault Splays 1.2km East)",
+        "stability_rating": "UNSTABLE (FoS 0.94)",
+        "risk_level": "HIGH"
+      },
+      {
+        "id": "TER-GTK-02",
+        "name": "Gangtok-Singtam NH-10 Corridor",
+        "elevation_m": 1650,
+        "slope_deg": 37.1,
+        "slope_classification": "Precipitous / Very Steep (>35\u00b0)",
+        "slope_color": "#ef4444",
+        "aspect": "West Facing (Teesta River Canyon)",
+        "plan_curvature": -0.32,
+        "profile_curvature": 0.45,
+        "drainage_density": "Very High (4.4 km/km\u00b2)",
+        "geology": "Daling Group Chlorite-Sericite Phyllite (Highly Sheared & Foliated)",
+        "soil_type": "Talus Debris & Coarse Silt Regolith",
+        "structural_features": "Main Central Thrust (MCT) Proximal Zone",
+        "stability_rating": "CRITICAL COLLAPSE (FoS 0.88)",
+        "risk_level": "CRITICAL"
+      },
+      {
+        "id": "TER-BMD-03",
+        "name": "Bomdila Pass (BCT Highway Flank)",
+        "elevation_m": 2415,
+        "slope_deg": 33.2,
+        "slope_classification": "Steep (25\u00b0 - 35\u00b0)",
+        "slope_color": "#f97316",
+        "aspect": "South-East Facing",
+        "plan_curvature": -0.08,
+        "profile_curvature": 0.15,
+        "drainage_density": "Moderate (2.6 km/km\u00b2)",
+        "geology": "Bomdila Gneissic Complex with Quartzite Beds",
+        "soil_type": "Sandy Clay Loam with Gravel",
+        "structural_features": "Secondary Joint Sets Dipping Towards Highway Cut",
+        "stability_rating": "MARGINALLY STABLE (FoS 1.22)",
+        "risk_level": "MEDIUM"
+      },
+      {
+        "id": "TER-ITA-04",
+        "name": "Itanagar Capital Complex Sector-4",
+        "elevation_m": 320,
+        "slope_deg": 26.5,
+        "slope_classification": "Moderately Steep (15\u00b0 - 25\u00b0)",
+        "slope_color": "#eab308",
+        "aspect": "North-East Facing",
+        "plan_curvature": 0.05,
+        "profile_curvature": -0.02,
+        "drainage_density": "Low-Moderate (1.9 km/km\u00b2)",
+        "geology": "Siwalik Tertiary Sandstone & Claystone",
+        "soil_type": "Residual Sandy Loam",
+        "structural_features": "Engineered Terracing with Concrete Retaining Systems",
+        "stability_rating": "GENERALLY STABLE (FoS 1.58)",
+        "risk_level": "LOW"
+      }
+    ],
+    "slope_distribution": [
+      {
+        "range": "0\u00b0 - 15\u00b0 (Gentle)",
+        "percentage": 14.5,
+        "count": 28
+      },
+      {
+        "range": "15\u00b0 - 25\u00b0 (Moderate)",
+        "percentage": 28.0,
+        "count": 54
+      },
+      {
+        "range": "25\u00b0 - 35\u00b0 (Steep)",
+        "percentage": 36.5,
+        "count": 71
+      },
+      {
+        "range": ">35\u00b0 (Precipitous / Extreme)",
+        "percentage": 21.0,
+        "count": 41
+      }
+    ]
+  },
+  "/api/landslides": {
+    "success": true,
+    "total": 6,
+    "page": 1,
+    "limit": 10,
+    "total_pages": 1,
+    "items": [
+      {
+        "id": "LS-2024-NER-102",
+        "location_name": "Tawang-Lumla Road km 18",
+        "district": "Tawang",
+        "state": "Arunachal Pradesh",
+        "date": "2024-06-28",
+        "rainfall_trigger_mm": 194.5,
+        "severity": "CRITICAL",
+        "deaths": 3,
+        "affected_population": 8500,
+        "infrastructure_damage": "220 meters of NH-13 washed away, fiber optic cable severed for 4 days",
+        "triggering_factor": "Monsoon cloudburst + saturated debris slide",
+        "latitude": 27.562,
+        "longitude": 91.815
+      },
+      {
+        "id": "LS-2024-NER-089",
+        "location_name": "NH-10 29th Mile Teesta Basin",
+        "district": "East Sikkim",
+        "state": "Sikkim",
+        "date": "2024-06-14",
+        "rainfall_trigger_mm": 210.0,
+        "severity": "CRITICAL",
+        "deaths": 6,
+        "affected_population": 25000,
+        "infrastructure_damage": "NH-10 closed for 14 days; multiple vehicles buried; supply chain disrupted",
+        "triggering_factor": "Toe erosion by swollen Teesta River + heavy rain",
+        "latitude": 27.284,
+        "longitude": 88.521
+      },
+      {
+        "id": "LS-2023-NER-055",
+        "location_name": "Bhalukpong-Bomdila Road (Sessa Slide)",
+        "district": "West Kameng",
+        "state": "Arunachal Pradesh",
+        "date": "2023-08-19",
+        "rainfall_trigger_mm": 168.0,
+        "severity": "HIGH",
+        "deaths": 0,
+        "affected_population": 12000,
+        "infrastructure_damage": "Road blocked for 48 hours; power transmission line damaged",
+        "triggering_factor": "Prolonged rainfall inducing planar slide on phyllite bedding",
+        "latitude": 27.185,
+        "longitude": 92.512
+      },
+      {
+        "id": "LS-2023-NER-041",
+        "location_name": "Guwahati Boragaon Hill Cut",
+        "district": "Kamrup Metropolitan",
+        "state": "Assam",
+        "date": "2023-06-19",
+        "rainfall_trigger_mm": 142.0,
+        "severity": "HIGH",
+        "deaths": 4,
+        "affected_population": 1800,
+        "infrastructure_damage": "8 informal residences destroyed; arterial road inundated",
+        "triggering_factor": "Steep artificial slope cutting with zero retention structure",
+        "latitude": 26.124,
+        "longitude": 91.685
+      },
+      {
+        "id": "LS-2022-NER-120",
+        "location_name": "Tupul Railway Yard Catastrophic Slide",
+        "district": "Noney",
+        "state": "Manipur",
+        "date": "2022-06-30",
+        "rainfall_trigger_mm": 260.0,
+        "severity": "CRITICAL",
+        "deaths": 58,
+        "affected_population": 35000,
+        "infrastructure_damage": "Tupul railway construction camp destroyed; Ijei river dammed into artificial lake",
+        "triggering_factor": "Massive deep-seated rotational failure following multi-day torrential deluge",
+        "latitude": 24.81,
+        "longitude": 93.63
+      },
+      {
+        "id": "LS-2021-NER-078",
+        "location_name": "Sohra-Mawsmai Escarpment Slide",
+        "district": "East Khasi Hills",
+        "state": "Meghalaya",
+        "date": "2021-07-11",
+        "rainfall_trigger_mm": 380.0,
+        "severity": "HIGH",
+        "deaths": 1,
+        "affected_population": 4200,
+        "infrastructure_damage": "Tourist viewpoint trail destroyed; water pumping pipeline shattered",
+        "triggering_factor": "Hyper-precipitation saturated limestone joint networks",
+        "latitude": 25.268,
+        "longitude": 91.725
+      }
+    ]
+  },
+  "/api/alerts": {
+    "success": true,
+    "total": 4,
+    "active_critical": 2,
+    "alerts": [
+      {
+        "id": "ALT-2026-0041",
+        "location_id": "LOC-TWG-01",
+        "location_name": "Tawang Valley Ridge & NH-13",
+        "district": "Tawang",
+        "state": "Arunachal Pradesh",
+        "severity": "critical",
+        "title": "URGENT: Imminent Slope Failure Threat along NH-13",
+        "description": "24h rainfall exceeded 138mm. Subsurface soil saturation reached 74.2% with active shear displacement of 4.8mm detected by sensor SNS-TWG-GM-01.",
+        "risk_score": 82.5,
+        "affected_population": 28400,
+        "recommended_actions": "1. Restrict all civilian transit along NH-13 Km 42-49.\n2. Evacuate 45 hillside homesteads to Tawang Higher Secondary Shelter.\n3. Position NDRF 12th Bn clearance bulldozer at Tawang bypass junction.",
+        "nearest_center": "Tawang Community Shelter & STNM Emergency Cell",
+        "status": "active",
+        "triggered_at": "2026-09-09T18:30:00Z"
+      },
+      {
+        "id": "ALT-2026-0042",
+        "location_id": "LOC-GTK-06",
+        "location_name": "Gangtok-Singtam NH-10 Corridor",
+        "district": "East Sikkim",
+        "state": "Sikkim",
+        "severity": "critical",
+        "title": "CRITICAL: Debris Flow Warning on NH-10 Lifeline",
+        "description": "Continuous cloudburst event (184mm in 24h). GNSS displacement accelerating at 8.6mm/day. Extreme probability of mudslide blocking Teesta corridor.",
+        "risk_score": 89.5,
+        "affected_population": 42000,
+        "recommended_actions": "Activate Siren Alert 3. Halt vehicular movement at Rangpo check-post. Divert freight via Lava-Kalimpong alternate route.",
+        "nearest_center": "STNM Multispeciality Disaster Ward",
+        "status": "active",
+        "triggered_at": "2026-09-09T19:05:00Z"
+      },
+      {
+        "id": "ALT-2026-0039",
+        "location_id": "LOC-CHR-07",
+        "location_name": "Cherrapunji Rim Escarpment",
+        "district": "East Khasi Hills",
+        "state": "Meghalaya",
+        "severity": "high",
+        "title": "HIGH ALERT: Torrential Precipitation & Karst Slump",
+        "description": "Precipitation crossed 240mm threshold. Soil moisture at 88%. Waterfall cascade scouring base of Sohra escarpment.",
+        "risk_score": 76.4,
+        "affected_population": 18500,
+        "recommended_actions": "Issue yellow alert to all downstream village councils (Dorbar Shnong). Avoid canyon trek routes.",
+        "nearest_center": "Cherrapunji Community Health Centre",
+        "status": "acknowledged",
+        "triggered_at": "2026-09-09T17:15:00Z"
+      },
+      {
+        "id": "ALT-2026-0038",
+        "location_id": "LOC-BMD-02",
+        "location_name": "Bomdila Pass BCT Highway",
+        "district": "West Kameng",
+        "state": "Arunachal Pradesh",
+        "severity": "medium",
+        "title": "ELEVATED RISK: Minor Toe Sloughing near BCT Km 68",
+        "description": "Pore pressure rising in schistose formation. Minor rockfall debris observed on shoulder.",
+        "risk_score": 48.0,
+        "affected_population": 14200,
+        "recommended_actions": "BRO (Border Roads Organisation) Project Vartak patrol dispatched. Single-lane movement advised.",
+        "nearest_center": "Bomdila Sub-Divisional Hospital",
+        "status": "acknowledged",
+        "triggered_at": "2026-09-09T16:00:00Z"
+      }
+    ]
+  },
+  "/api/emergency/resources": {
+    "success": true,
+    "resources": {
+      "shelters": [
+        {
+          "id": "EM-SH-01",
+          "name": "Tawang Government Higher Secondary Relief Camp",
+          "district": "Tawang",
+          "latitude": 27.5885,
+          "longitude": 91.864,
+          "capacity": 650,
+          "current_occupancy": 124,
+          "contact": "+91-3794-222340",
+          "status": "ready",
+          "medical_team_on_site": true,
+          "generator_power": true
+        },
+        {
+          "id": "EM-SH-02",
+          "name": "Bomdila Indoor Stadium Community Shelter",
+          "district": "West Kameng",
+          "latitude": 27.262,
+          "longitude": 92.419,
+          "capacity": 800,
+          "current_occupancy": 45,
+          "contact": "+91-3782-222108",
+          "status": "ready",
+          "medical_team_on_site": true,
+          "generator_power": true
+        },
+        {
+          "id": "EM-SH-03",
+          "name": "Gangtok Paljor Stadium Disaster Relief Facility",
+          "district": "East Sikkim",
+          "latitude": 27.332,
+          "longitude": 88.614,
+          "capacity": 1200,
+          "current_occupancy": 310,
+          "contact": "+91-3592-202726",
+          "status": "ready",
+          "medical_team_on_site": true,
+          "generator_power": true
+        }
+      ],
+      "hospitals": [
+        {
+          "id": "EM-HP-01",
+          "name": "Khandro Drowa Tsangmu District Hospital Tawang",
+          "district": "Tawang",
+          "latitude": 27.583,
+          "longitude": 91.8625,
+          "trauma_beds": 45,
+          "available_ambulances": 6,
+          "blood_bank": "Available",
+          "contact": "+91-3794-222216",
+          "distance_km_from_high_risk": 2.1
+        },
+        {
+          "id": "EM-HP-02",
+          "name": "Sir Thutob Namgyal Memorial (STNM) Multispeciality Hospital",
+          "district": "East Sikkim",
+          "latitude": 27.319,
+          "longitude": 88.601,
+          "trauma_beds": 120,
+          "available_ambulances": 14,
+          "blood_bank": "Critical Reserves OK",
+          "contact": "+91-3592-281112",
+          "distance_km_from_high_risk": 1.5
+        },
+        {
+          "id": "EM-HP-03",
+          "name": "Tomo Riba Institute of Health & Medical Sciences (TRIHMS)",
+          "district": "Papum Pare",
+          "latitude": 27.108,
+          "longitude": 93.675,
+          "trauma_beds": 80,
+          "available_ambulances": 10,
+          "blood_bank": "Available",
+          "contact": "+91-360-2350331",
+          "distance_km_from_high_risk": 4.2
+        }
+      ],
+      "rescue_forces": [
+        {
+          "id": "EM-RF-01",
+          "unit": "12th Battalion NDRF (National Disaster Response Force)",
+          "base_location": "Doimukh / Itanagar",
+          "deployed_team": "Team Alpha (Tawang Sector)",
+          "personnel": 45,
+          "heavy_equipment": "2x Tracked Hydraulic Excavators, 4x InSAR Drones, SAR Dogs",
+          "readiness_min": 15,
+          "contact": "+91-360-2277107"
+        },
+        {
+          "id": "EM-RF-02",
+          "unit": "Project Vartak Border Roads Organisation (BRO)",
+          "base_location": "Tenga Valley & Bomdila",
+          "deployed_team": "752 BRTF Quick Road Clearance Unit",
+          "personnel": 60,
+          "heavy_equipment": "4x Front Wheel Loaders, 2x Rock Breakers, Rapid Bailey Bridge Units",
+          "readiness_min": 20,
+          "contact": "+91-3782-273220"
+        }
+      ],
+      "road_corridors": [
+        {
+          "corridor": "NH-13 Tawang - Sela Pass Highway",
+          "status": "caution",
+          "clearance": "Single lane controlled by traffic police; prone to mud spatter",
+          "detour_available": "Via Old Lumla-Tawang link road (42 km longer)"
+        },
+        {
+          "corridor": "NH-10 Sevoke - Teesta Bridge - Rangpo",
+          "status": "blocked",
+          "clearance": "Road blocked at 29th Mile due to 60m rockslide. Repair work underway.",
+          "detour_available": "Diverted via Gorubathan - Lava - Reshi route"
+        },
+        {
+          "corridor": "BCT Highway Bomdila - Rupa - Balipara",
+          "status": "clear",
+          "clearance": "Open for all two-way military and civilian traffic.",
+          "detour_available": "N/A"
+        }
+      ]
+    }
+  },
+  "/api/reports/templates": {
+    "success": true,
+    "templates": [
+      {
+        "id": "rep-daily-01",
+        "title": "Daily Landslide Hazard Assessment Report",
+        "type": "daily",
+        "frequency": "Every 24 Hours (06:00 IST)",
+        "intended_recipients": "District Magistrates, SDMA Control Room, BRO Vartak HQ"
+      },
+      {
+        "id": "rep-weekly-02",
+        "title": "Weekly North Eastern Region Hydro-Geological Intelligence Brief",
+        "type": "weekly",
+        "frequency": "Every Monday",
+        "intended_recipients": "National Disaster Management Authority (NDMA), GSI Director General"
+      },
+      {
+        "id": "rep-incident-03",
+        "title": "Special Landslide Early Warning & Evacuation Action Plan",
+        "type": "incident",
+        "frequency": "Event-Driven",
+        "intended_recipients": "Superintendent of Police, NDRF 12th Battalion, Health Officers"
+      },
+      {
+        "id": "rep-sensor-04",
+        "title": "IoT Telemetry Fleet Health & Sensor Calibration Audit",
+        "type": "sensor",
+        "frequency": "Bi-Weekly",
+        "intended_recipients": "Geotechnical Instrumentation Team, IT & Telemetry Division"
+      }
+    ]
+  },
+  "/api/models": {
+    "success": true,
+    "metrics": {
+      "current_model": "AI-SlopeGuard XGBoost Ensemble v2.4",
+      "framework": "XGBoost 2.0.3 + Geotechnical Infinite Slope FoS",
+      "trained_on": "4,120 Historical Rainfall-Induced Landslide Events (NER 2012-2025)",
+      "accuracy": 0.942,
+      "precision": 0.928,
+      "recall": 0.954,
+      "f1_score": 0.941,
+      "roc_auc": 0.967,
+      "confusion_matrix": {
+        "true_negative": 2840,
+        "false_positive": 88,
+        "false_negative": 42,
+        "true_positive": 1150
+      },
+      "feature_importances": [
+        {
+          "feature": "Antecedent Rainfall (72h Cumulative)",
+          "importance": 0.312
+        },
+        {
+          "feature": "Pore Water Pressure & Soil Moisture Saturation",
+          "importance": 0.245
+        },
+        {
+          "feature": "Slope Gradient Angle",
+          "importance": 0.178
+        },
+        {
+          "feature": "Ground Displacement Velocity (Extensometer/InSAR)",
+          "importance": 0.126
+        },
+        {
+          "feature": "Lithological Weakness & Geological Shear Zones",
+          "importance": 0.084
+        },
+        {
+          "feature": "Terrain Curvature & Elevation",
+          "importance": 0.055
+        }
+      ],
+      "versions": [
+        {
+          "version": "v1.0-Baseline",
+          "date": "2024-03-10",
+          "type": "Random Forest",
+          "f1": 0.865,
+          "status": "deprecated"
+        },
+        {
+          "version": "v1.5-Geotech",
+          "date": "2024-11-20",
+          "type": "Hybrid FoS + Logistic Regression",
+          "f1": 0.898,
+          "status": "archived"
+        },
+        {
+          "version": "v2.0-XGBoost",
+          "date": "2025-05-15",
+          "type": "XGBoost + SHAP Attributions",
+          "f1": 0.924,
+          "status": "stable"
+        },
+        {
+          "version": "v2.4-Production",
+          "date": "2026-02-01",
+          "type": "Physics-Informed XGBoost Multi-Horizon",
+          "f1": 0.941,
+          "status": "active"
+        }
+      ]
+    },
+    "prediction_history": [
+      {
+        "timestamp": "19:00 IST",
+        "location": "Tawang Valley",
+        "predicted_prob": 82.5,
+        "actual_event": "Minor Slump",
+        "accuracy": "Correct"
+      },
+      {
+        "timestamp": "17:30 IST",
+        "location": "Gangtok NH-10",
+        "predicted_prob": 89.5,
+        "actual_event": "Debris Flow",
+        "accuracy": "Correct"
+      },
+      {
+        "timestamp": "15:45 IST",
+        "location": "Bomdila Pass",
+        "predicted_prob": 48.0,
+        "actual_event": "No Failure",
+        "accuracy": "Correct"
+      },
+      {
+        "timestamp": "14:10 IST",
+        "location": "Itanagar Sec-4",
+        "predicted_prob": 21.0,
+        "actual_event": "No Failure",
+        "accuracy": "Correct"
+      },
+      {
+        "timestamp": "12:00 IST",
+        "location": "Cherrapunji",
+        "predicted_prob": 76.4,
+        "actual_event": "Rockfall",
+        "accuracy": "Correct"
+      }
+    ]
+  },
+  "/api/system/health": {
+    "success": true,
+    "overall_status": "All Systems Fully Operational",
+    "average_uptime_pct": 99.9,
+    "active_services_count": 7,
+    "services": [
+      {
+        "service_name": "FastAPI Core REST Gateway",
+        "status": "Operational",
+        "latency_ms": 18,
+        "uptime_pct": 99.98,
+        "last_incident": "None in last 45 days"
+      },
+      {
+        "service_name": "PostgreSQL / PostGIS Spatial Engine",
+        "status": "Operational",
+        "latency_ms": 12,
+        "uptime_pct": 99.99,
+        "last_incident": "None in last 90 days"
+      },
+      {
+        "service_name": "Physics-Informed XGBoost Inference Service",
+        "status": "Operational",
+        "latency_ms": 45,
+        "uptime_pct": 99.95,
+        "last_incident": "Worker scale event 3 days ago"
+      },
+      {
+        "service_name": "MapLibre / Leaflet GIS Spatial Tile Server",
+        "status": "Operational",
+        "latency_ms": 28,
+        "uptime_pct": 99.92,
+        "last_incident": "Cache flush 12 hours ago"
+      },
+      {
+        "service_name": "LoRaWAN / MQTT Telemetry Gateway",
+        "status": "Operational",
+        "latency_ms": 32,
+        "uptime_pct": 99.85,
+        "last_incident": "1 node radio timeout re-polled"
+      },
+      {
+        "service_name": "CAP Public Emergency Alert Broadcaster",
+        "status": "Operational",
+        "latency_ms": 50,
+        "uptime_pct": 100.0,
+        "last_incident": "None"
+      },
+      {
+        "service_name": "ISRO / InSAR Satellite Sync Ingestion Service",
+        "status": "Operational",
+        "latency_ms": 110,
+        "uptime_pct": 99.6,
+        "last_incident": "Daily pass ingested successfully"
+      }
+    ]
+  },
+  "/api/system/data-sources": {
+    "success": true,
+    "sources": [
+      {
+        "id": "SRC-IMD",
+        "name": "India Meteorological Department (IMD)",
+        "type": "Doppler Weather Radar & AWS Network",
+        "coverage": "North Eastern Region (NER)",
+        "last_sync": "4 mins ago",
+        "status": "Operational",
+        "api_status": "Active (Latency 42ms)",
+        "records_ingested_today": 142800,
+        "refresh_interval": "15 min"
+      },
+      {
+        "id": "SRC-ISRO-NRSC",
+        "name": "ISRO / National Remote Sensing Centre (NRSC)",
+        "type": "Sentinel-1A SAR InSAR & Cartosat DEM",
+        "coverage": "Himalayan Belt (Arunachal & Sikkim)",
+        "last_sync": "1 hour ago",
+        "status": "Operational",
+        "api_status": "Active (Latency 115ms)",
+        "records_ingested_today": 18450,
+        "refresh_interval": "Daily Pass"
+      },
+      {
+        "id": "SRC-GSI",
+        "name": "Geological Survey of India (GSI) Bhuvan",
+        "type": "National Landslide Susceptibility Mapping (NLSM)",
+        "coverage": "Macro-scale Geo-Hazard Database",
+        "last_sync": "2 days ago",
+        "status": "Operational",
+        "api_status": "Active (Cached Spatial WMS)",
+        "records_ingested_today": 6200,
+        "refresh_interval": "Weekly"
+      },
+      {
+        "id": "SRC-IOT-GW",
+        "name": "LoRaWAN Micro-Telemetry Gateway Network",
+        "type": "Ground In-Situ Geotechnical Sensors",
+        "coverage": "25 Station Nodes across Arunachal & Assam",
+        "last_sync": "Live Stream (30s)",
+        "status": "Operational",
+        "api_status": "MQTT Broker Active (0 dropped frames)",
+        "records_ingested_today": 489200,
+        "refresh_interval": "Continuous (30s)"
+      },
+      {
+        "id": "SRC-CWC",
+        "name": "Central Water Commission (CWC) River Gauge",
+        "type": "Brahmaputra & Tributary Discharge Gauges",
+        "coverage": "Tezpur, Guwahati, Pasighat Stations",
+        "last_sync": "12 mins ago",
+        "status": "Operational",
+        "api_status": "Active (Latency 65ms)",
+        "records_ingested_today": 24000,
+        "refresh_interval": "Hourly"
+      }
+    ]
+  },
+  "/api/system/settings": {
+    "success": true,
+    "settings": {
+      "risk_threshold_low": 25,
+      "risk_threshold_medium": 50,
+      "risk_threshold_high": 75,
+      "rainfall_critical_mm": 150.0,
+      "soil_moisture_critical_pct": 80.0,
+      "alert_auto_broadcast": false,
+      "dark_mode_palette": "tactical_navy",
+      "language": "English"
+    }
+  }
+}

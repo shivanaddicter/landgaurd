@@ -1,0 +1,43 @@
+services:
+  database:
+    image: postgis/postgis:16-3.4
+    container_name: slopeguard-db
+    environment:
+      POSTGRES_DB: slopeguard_db
+      POSTGRES_USER: slopeguard_admin
+      POSTGRES_PASSWORD: slopeguard_password_2026
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ../database/schema.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+    container_name: slopeguard-backend
+    environment:
+      - SECRET_KEY=aislopeguard-super-secret-production-key-2026
+      - DATABASE_URL=postgresql://slopeguard_admin:slopeguard_password_2026@database:5432/slopeguard_db
+      - ENVIRONMENT=production
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+    container_name: slopeguard-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
