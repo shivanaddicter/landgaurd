@@ -99,6 +99,41 @@ docker-compose -f docker/docker-compose.yml up --build
 
 ---
 
+## Hosting on Vercel & Deploying to GitHub
+
+### 1. Push to Your GitHub Repository
+To push this project to your GitHub:
+1. Create a new repository on [GitHub](https://github.com/new) (e.g., `ai-slopeguard`).
+2. Run either helper script in the project root:
+   ```cmd
+   push_to_github.bat
+   ```
+   *or with PowerShell:*
+   ```powershell
+   .\push_to_github.ps1 -RepoUrl "https://github.com/<your-username>/ai-slopeguard.git"
+   ```
+   *or manually via Git commands:*
+   ```bash
+   git remote add origin https://github.com/<your-username>/ai-slopeguard.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+### 2. Deploy to Vercel (1-Click)
+1. Go to [vercel.com/new](https://vercel.com/new) and log in with your GitHub account.
+2. Click **Import** next to your `ai-slopeguard` repository.
+3. Vercel automatically detects the Vite configuration via `vercel.json`:
+   - **Framework Preset**: Vite
+   - **Root Directory**: `./` (or select `frontend`)
+   - **Build Command**: `cd frontend && npm install && npm run build`
+   - **Output Directory**: `frontend/dist`
+4. Click **Deploy**.
+5. Your live AI-SlopeGuard Command Center URL will be active in ~1 minute (e.g., `https://ai-slopeguard.vercel.app`)!
+
+> **Note on Standalone Hosting**: The frontend includes built-in high-fidelity fallback mock data and real-time calculation engines. Even without a dedicated backend server deployed, the entire platform runs smoothly on Vercel for demonstrations and evaluations!
+
+---
+
 ## 11-Step Hackathon Demonstration Script
 
 1. **Step 1 - Open Dashboard (`/`)**: View 8 KPI metrics (Rainfall, Soil Moisture, Active Alerts, Landslide Probability, IoT Health) with trend sparklines and active alert banner.
