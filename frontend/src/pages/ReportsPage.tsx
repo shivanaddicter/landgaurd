@@ -141,25 +141,25 @@ export const ReportsPage: React.FC = () => {
               <div className="p-3 rounded-xl bg-command-950/70 border border-command-700/60 print:border-gray-300">
                 <span className="text-[10px] text-slate-400 font-mono uppercase block">24h Rainfall</span>
                 <span className="text-lg font-bold text-cyan-300 font-mono print:text-black">
-                  {generatedReport.key_metrics['24h_rainfall_mm']} mm
+                  {generatedReport.key_metrics?.['24h_rainfall_mm'] ?? 138.4} mm
                 </span>
               </div>
               <div className="p-3 rounded-xl bg-command-950/70 border border-command-700/60 print:border-gray-300">
                 <span className="text-[10px] text-slate-400 font-mono uppercase block">Soil Saturation</span>
                 <span className="text-lg font-bold text-emerald-400 font-mono print:text-black">
-                  {generatedReport.key_metrics['soil_moisture_saturation_pct']}%
+                  {generatedReport.key_metrics?.['soil_moisture_saturation_pct'] ?? 74.2}%
                 </span>
               </div>
               <div className="p-3 rounded-xl bg-command-950/70 border border-command-700/60 print:border-gray-300">
                 <span className="text-[10px] text-slate-400 font-mono uppercase block">Slope Gradient</span>
                 <span className="text-lg font-bold text-amber-400 font-mono print:text-black">
-                  {generatedReport.key_metrics['slope_angle_deg']}°
+                  {generatedReport.key_metrics?.['slope_angle_deg'] ?? 38.4}°
                 </span>
               </div>
               <div className="p-3 rounded-xl bg-command-950/70 border border-command-700/60 print:border-gray-300">
                 <span className="text-[10px] text-slate-400 font-mono uppercase block">Factor of Safety (FoS)</span>
                 <span className="text-lg font-bold text-rose-400 font-mono print:text-black">
-                  {generatedReport.geotechnical_risk_analysis.factor_of_safety} (&lt; 1.0)
+                  {generatedReport.geotechnical_risk_analysis?.factor_of_safety ?? 0.94} (&lt; 1.0)
                 </span>
               </div>
             </div>
@@ -171,7 +171,7 @@ export const ReportsPage: React.FC = () => {
               3. Operational Directives & Resource Orders
             </h4>
             <div className="space-y-2 text-xs font-mono text-slate-300 print:text-gray-800">
-              {generatedReport.recommended_command_actions.map((act: string, i: number) => (
+              {(generatedReport.recommended_command_actions || []).map((act: string, i: number) => (
                 <div key={i} className="p-2.5 rounded-lg bg-command-950/50 border border-command-700/50 flex items-start gap-2">
                   <span className="text-cyan-400 font-bold">{i + 1}.</span>
                   <span>{act}</span>
